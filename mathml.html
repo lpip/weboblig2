@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Artikkel Mal</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="styleartikkel.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Oswald&subset=latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header>
+	<div id="container">
+		<img id="logo" src="bilder/logo.png" alt="Loc Dai Le" />
+
+		<nav>
+			<ul>
+				<li><a href="index.html"><i class="fa fa-home fa-fw"></i>Home</a></li>
+				<li><a href="about.html"><i class="fa fa-info"></i> About</a></li>
+				<li><a href="contact.html"><i class="fa fa-address-book"></i> Contact</a></li>
+				<li><a href="resources.html"><i class="fa fa-tasks"></i> Resources</a></li>
+				<li><a href="artikkelmal.html"><i class="fa fa-columns"></i> Template</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main>
+
+	<article>
+		<h3>Mathematical Markup Language (MathML)</h3>
+
+    <h4>Hva er MathML?</h4>
+
+		<p class="description">Hovedsaken bak MathML er å tilrettelegge bruken av matematiske og vitenskapelige innhold på nett. MathML kan bli brukt til å kode en presentasjon av matematisk betegnelse for visuell visning.
+		MathML er designet for å dekke to formål, markup for strukturering av matematiske uttrykk og markup for presentasjon av matematiske uttrykk.</p>
+
+		<h4>Eksempler på MathML</h4>
+
+		<p class="description">Selv om HTML har mange tagger, så dekker den ikke matte. Med ingen metoder å bruke HTML for matematiske uttrykk, brukte forfattere istedenfor skjermbilder av ligninger.</p>
+
+
+		<h5>
+		<math style="font-size:16px">
+	   <mi>r</mi>
+	   <mo>=</mo>
+	   <msqrt>
+	      <mrow>
+	         <mo>(</mo>
+	         <msup>
+	            <mi>x</mi>
+	            <mn>2</mn>
+	         </msup>
+	         <mo>+</mo>
+	         <msup>
+	            <mi>y</mi>
+	            <mn>2</mn>
+	         </msup>
+	         <mo>)</mo>
+	      </mrow>
+	   </msqrt>
+		 </math>
+ 		</h5>
+
+		<pre>
+			&lt;math&gt;
+			   &lt;mi&gt;r&lt;/mi&gt;
+			   &lt;mo&gt;=&lt;/mo&gt;
+			   &lt;msqrt&gt;
+			      &lt;mrow&gt;
+			         &lt;mo&gt;(&lt;/mo&gt;
+			         &lt;msup&gt;
+			            &lt;mi&gt;x&lt;/mi&gt;
+			            &lt;mn&gt;2&lt;/mn&gt;
+			         &lt;/msup&gt;
+			         &lt;mo&gt;+&lt;/mo&gt;
+			         &lt;msup&gt;
+			            &lt;mi&gt;y&lt;/mi&gt;
+			            &lt;mn&gt;2&lt;/mn&gt;
+			         &lt;/msup&gt;
+			         &lt;mo&gt;)&lt;/mo&gt;
+			      &lt;/mrow&gt;
+			   &lt;/msqrt&gt;
+			&lt;/math&gt;
+		</pre>
+
+		<h5>
+			<math style="font-size:16px">
+			<mrow>
+			  <mi>R</mi>
+			  <mo>=</mo>
+			  <mfenced open="[" close="]">
+			    <mtable>
+			      <mtr>
+			         <mtd>
+			            <mi>-cos</mi>
+			            <mo>
+			            (</mo>
+			            <mi>v</mi><mo>)
+			            </mo>
+			         </mtd>
+			         <mtd>
+			            <mi>sin</mi>
+			            <mo>
+			            (</mo><mi>v</mi><mo>)
+			            </mo>
+			         </mtd>
+			         <mtd>
+			            <mi>0</mi>
+			         </mtd>
+			      </mtr>
+			      <mtr>
+			         <mtd>
+			            <mi>sin</mi>
+			            <mo>
+			            (</mo><mi>v</mi><mo>)
+			            </mo>
+			         </mtd>
+			         <mtd>
+			            <mi>cos</mi>
+			            <mo>(</mo><mi>v</mi><mo>)
+			            </mo>
+			         </mtd>
+			         <mtd>
+			            <mi>0</mi>
+			         </mtd>
+			      </mtr>
+			      <mtr>
+			         <mtd><mi>0</mi></mtd>
+			         <mtd><mi>0</mi></mtd>
+			         <mtd><mi>1</mi></mtd>
+			      </mtr>
+			    </mtable>
+			  </mfenced>
+			</mrow>
+			</math>
+			</h5>
+
+			<pre>
+			&lt;math&gt;
+			&lt;mrow&gt;
+			  &lt;mi&gt;R&lt;/mi&gt;
+			  &lt;mo&gt;=&lt;/mo&gt;
+			  &lt;mfenced open="[" close="]"&gt;
+			    &lt;mtable&gt;
+			      &lt;mtr&gt;
+			         &lt;mtd&gt;
+			            &lt;mi&gt;-cos&lt;/mi&gt;
+			            &lt;mo&gt;
+			            (&lt;/mo&gt;
+			            &lt;mi&gt;v&lt;/mi&gt;&lt;mo&gt;)
+			            &lt;/mo&gt;
+			         &lt;/mtd&gt;
+			         &lt;mtd&gt;
+			            &lt;mi&gt;sin&lt;/mi&gt;
+			            &lt;mo&gt;
+			            (&lt;/mo&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mo&gt;)
+			            &lt;/mo&gt;
+			         &lt;/mtd&gt;
+			         &lt;mtd&gt;
+			            &lt;mi&gt;0&lt;/mi&gt;
+			         &lt;/mtd&gt;
+			      &lt;/mtr&gt;
+			      &lt;mtr&gt;
+			         &lt;mtd&gt;
+			            &lt;mi&gt;sin&lt;/mi&gt;
+			            &lt;mo&gt;
+			            (&lt;/mo&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mo&gt;)
+			            &lt;/mo&gt;
+			         &lt;/mtd&gt;
+			         &lt;mtd&gt;
+			            &lt;mi&gt;cos&lt;/mi&gt;
+			            &lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mo&gt;)
+			            &lt;/mo&gt;
+			         &lt;/mtd&gt;
+			         &lt;mtd&gt;
+			            &lt;mi&gt;0&lt;/mi&gt;
+			         &lt;/mtd&gt;
+			      &lt;/mtr&gt;
+			      &lt;mtr&gt;
+			         &lt;mtd&gt;&lt;mi&gt;0&lt;/mi&gt;&lt;/mtd&gt;
+			         &lt;mtd&gt;&lt;mi&gt;0&lt;/mi&gt;&lt;/mtd&gt;
+			         &lt;mtd&gt;&lt;mi&gt;1&lt;/mi&gt;&lt;/mtd&gt;
+			      &lt;/mtr&gt;
+			    &lt;/mtable&gt;
+			  &lt;/mfenced&gt;
+			&lt;/mrow&gt;
+			&lt;/math&gt;
+			</pre>
+
+			<h5>
+				<math style="font-size:16px">
+		    <mrow>
+		      <mi>B</mi>
+		      <mrow>
+		        <mrow>
+		          <mo stretchy="false">(</mo>
+		          <mi>t</mi>
+		          <mo stretchy="false">)</mo>
+		        </mrow>
+		        <mo stretchy="false">=</mo>
+		        <mrow>
+		          <munderover>
+		            <mo stretchy="false">∑</mo>
+		            <mrow>
+		              <mi>i</mi>
+		              <mo stretchy="false">=</mo>
+		              <mn>0</mn>
+		            </mrow>
+		            <mi>n</mi>
+		          </munderover>
+		          <msubsup>
+		            <mi>B</mi>
+		            <mi>i</mi>
+		            <mi>n</mi>
+		          </msubsup>
+		        </mrow>
+		      </mrow>
+		      <mrow>
+		        <msup>
+		          <mi>t</mi>
+		          <mi>i</mi>
+		        </msup>
+		        <msup>
+		          <mrow>
+		            <mo stretchy="false">(</mo>
+		            <mrow>
+		              <mn>1</mn>
+		              <mo stretchy="false">−</mo>
+		              <mi>t</mi>
+		            </mrow>
+		            <mo stretchy="false">)</mo>
+		          </mrow>
+		          <mrow>
+		            <mo stretchy="false">(</mo>
+		            <mrow>
+		              <mi>n</mi>
+		              <mo stretchy="false">−</mo>
+		              <mi>i</mi>
+		            </mrow>
+		            <mo stretchy="false">)</mo>
+		          </mrow>
+		        </msup>
+		        <msub>
+		          <mi>P</mi>
+		          <mi>i</mi>
+		        </msub>
+		      </mrow>
+		    </mrow>
+				</math>
+				</h5>
+
+				<pre class="prettyprint lang-xml skiptranslate" id="MathML36">
+				&lt;math style&gt;
+				    &lt;mrow&gt;
+				      &lt;mi&gt;B&lt;/mi&gt;
+				      &lt;mrow&gt;
+				        &lt;mrow&gt;
+				          &lt;mo stretchy="false"&gt;(&lt;/mo&gt;
+				          &lt;mi&gt;t&lt;/mi&gt;
+				          &lt;mo stretchy="false"&gt;)&lt;/mo&gt;
+				        &lt;/mrow&gt;
+				        &lt;mo stretchy="false"&gt;=&lt;/mo&gt;
+				        &lt;mrow&gt;
+				          &lt;munderover&gt;
+				            &lt;mo stretchy="false"&gt;∑&lt;/mo&gt;
+				            &lt;mrow&gt;
+				              &lt;mi&gt;i&lt;/mi&gt;
+				              &lt;mo stretchy="false"&gt;=&lt;/mo&gt;
+				              &lt;mn&gt;0&lt;/mn&gt;
+				            &lt;/mrow&gt;
+				            &lt;mi&gt;n&lt;/mi&gt;
+				          &lt;/munderover&gt;
+				          &lt;msubsup&gt;
+				            &lt;mi&gt;B&lt;/mi&gt;
+				            &lt;mi&gt;i&lt;/mi&gt;
+				            &lt;mi&gt;n&lt;/mi&gt;
+				          &lt;/msubsup&gt;
+				        &lt;/mrow&gt;
+				      &lt;/mrow&gt;
+				      &lt;mrow&gt;
+				        &lt;msup&gt;
+				          &lt;mi&gt;t&lt;/mi&gt;
+				          &lt;mi&gt;i&lt;/mi&gt;
+				        &lt;/msup&gt;
+				        &lt;msup&gt;
+				          &lt;mrow&gt;
+				            &lt;mo stretchy="false"&gt;(&lt;/mo&gt;
+				            &lt;mrow&gt;
+				              &lt;mn&gt;1&lt;/mn&gt;
+				              &lt;mo stretchy="false"&gt;−&lt;/mo&gt;
+				              &lt;mi&gt;t&lt;/mi&gt;
+				            &lt;/mrow&gt;
+				            &lt;mo stretchy="false"&gt;)&lt;/mo&gt;
+				          &lt;/mrow&gt;
+				          &lt;mrow&gt;
+				            &lt;mo stretchy="false"&gt;(&lt;/mo&gt;
+				            &lt;mrow&gt;
+				              &lt;mi&gt;n&lt;/mi&gt;
+				              &lt;mo stretchy="false"&gt;−&lt;/mo&gt;
+				              &lt;mi&gt;i&lt;/mi&gt;
+				            &lt;/mrow&gt;
+				            &lt;mo stretchy="false"&gt;)&lt;/mo&gt;
+				          &lt;/mrow&gt;
+				        &lt;/msup&gt;
+				        &lt;msub&gt;
+				          &lt;mi&gt;P&lt;/mi&gt;
+				          &lt;mi&gt;i&lt;/mi&gt;
+				        &lt;/msub&gt;
+				      &lt;/mrow&gt;
+				    &lt;/mrow&gt;
+				&lt;/math&gt;
+				</pre>
+
+	<h4>Hvorfor MathML?</h4>
+
+	<p class="description">Med MathML blir det mulig å fange både strukturen og innholde til matematiske ligninger på en måte slik at leseren kan lett forstå det. Målet er å integrere matte formler inn til World Wide Web (WWW) sine nettsted og dokumenter.</p>
+
+	</article>
+
+</main>
+
+<div class="footer">
+
+  <a href="aboutthispage.html">About this page</a>
+
+</div>
+
+</body>
+
+</html>
